@@ -2,10 +2,12 @@ module count_par
 #(parameter N=4)
 (
 	input wire clk, reset, res, ena, rev, load,
+	// Входные данные
 	input wire [N-1:0] d,
-	output wire [N-1:0] q	
+	// Выходные данные
+	output wire [N-1:0] q
 );
-	reg [N-1:0] cnt;
+    reg [N-1:0] cnt;
 	reg [N-1:0] cnt_next;
 
 	assign q = cnt;
