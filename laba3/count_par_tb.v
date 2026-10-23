@@ -5,89 +5,73 @@ module count_par_tb;
     localparam T=20;
 
     reg clk, reset, res, ena, rev, load;
-	reg [N-1:0] d;
-	wire [N-1:0] q;
+    reg [N-1:0] d;
+    wire [N-1:0] q;
 
-	count_par #(.N(N)) test (
-		.clk  (clk),
-		.reset(reset),
-		.res  (res),
-		.ena  (ena),
-		.rev  (rev),
-		.load (load),
-		.d    (d),
-		.q    (q)
-	);
+    count_par #(.N(N)) test (
+        .clk  (clk),
+        .reset(reset),
+        .res  (res),
+        .ena  (ena),
+        .rev  (rev),
+        .load (load),
+        .d    (d),
+        .q    (q)
+    );
 
-	always @*
-	begin
-	    clk = 1'b0;
-		#(T/2);
-		clk = 1'b1;
-		#(T/2);
-	end
+    initial clk = 1'b0;
+    always #(T/2) clk = ~clk;
 
-	initial
-	begin
-	    reset = 1'b0;
-		#(T/4);
-		reset = 1'b1;
-	end
+    initial
+    begin
+        reset = 1'b0;
+        #(T/4);
+        reset = 1'b1;
+    end
 
-	initial
-	begin
-	    res = 1'b0;
-		ena = 1'b0;
-		rev = 1'b0;
-		load = 1'b0;
-		d = 4'b0000;
+    initial
+    begin
+        res = 1'b0;
+        ena = 1'b0;
+        rev = 1'b0;
+        load = 1'b0;
+        d = 4'b0000;
 
+        @(negedge clk);
+        @(negedge clk);
 
-		@(negedge clk);
-		@(negedge clk);
-		@(negedge clk);
+        ena = 1'b1;
+        rev = 1'b0;
+        @(negedge clk);
+        @(negedge clk);
+        @(negedge clk);
 
-		// прямой счёт
-		ena = 1'b1;
-		res = 1'b1;
-		rev = 1'b1;
+        ena = 1'b0;
+        @(negedge clk);
+        @(negedge clk);
 
-		@(negedge clk); // 1
-		@(negedge clk); // 2
-		@(negedge clk); // 3
+        rev = 1'b1;
+        ena = 1'b1;
+        @(negedge clk);
+        @(negedge clk);
 
-		// останавливаем
-		ena = 1'b0;
-		@(negedge clk); // 3
-		@(negedge clk); // 3
+        ena = 1'b0;
+        d = 4'b0111;
+        load = 1'b1;
+        @(negedge clk);
+        load = 1'b0;
 
-		// идёи в обратном направлении
-		rev = 1'b0;
-		ena = 1'b1;
-		@(negedge clk); // 2
-		@(negedge clk); // 1
+        ena = 1'b1;
+        rev = 1'b0;
+        @(negedge clk);
 
-		// останавливаем
-		ena = 1'b0;
-		rev = 1'b1;
-		@(negedge clk); // 1
+        res = 1'b1;
+        @(negedge clk);
+        res = 1'b0;
 
-		// загрузка в счетчик
-		d = 4'b0111; // 7
-		load = 1'b1;
-		ena = 1'b1;
+        @(negedge clk);
+        @(negedge clk);
 
-		@(negedge clk); // 7
-		load = 1'b0;
-
-		@(negedge clk); // 8
-
-		res = 1'b1;
-		@(negedge clk); // 0
-
-		res = 1'b0;
-		@(negedge clk); // 1
-		@(negedge clk); // 2
-		$stop;
-	end
+        $stop;
+    end
 endmodule
