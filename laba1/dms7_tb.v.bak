@@ -1,0 +1,25 @@
+`timescale 1ns/100ps
+
+module dms7_tb;
+	reg [6:0] test_in_line;
+	reg [1:0] test_in_adr;
+	wire [6:0] test_out_data0; 
+ 	wire [6:0] test_out_data1; 
+ 	wire [6:0] test_out_data2; 
+ 	wire [6:0] test_out_data3;
+
+	integer i;
+
+	dms_7 test (.line(test_in_line), .adr(test_in_adr), .data0(test_out_data0), .data1(test_out_data1), .data2(test_out_data2), .data3(test_out_data3));
+	initial
+	begin	
+		test_in_line = 7'b0100100;
+		
+		for (i = 0; i < 4; i = i + 1)
+		begin
+			test_in_adr = i[1:0];
+			#200;
+		end
+		$stop;
+	end
+endmodule

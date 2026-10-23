@@ -1,0 +1,33 @@
+`timescale 1ns/100ps
+
+module main_tb;
+	reg [3:0] test_in;
+	reg [1:0] test_addr;
+	wire [6:0] test_hex0;
+	wire [6:0] test_hex1;
+	wire [6:0] test_hex2;
+	wire [6:0] test_hex3;
+	
+	integer i;
+
+	main main_test (.sw_data(test_in), .hex0(test_hex0), .hex1(test_hex1), .hex2(test_hex2), .hex3(test_hex3), .addr(test_addr));
+	
+	initial
+	begin
+		test_in = 4'h5;
+		for (i = 3; i >= 0; i = i - 1)
+		begin
+			test_addr = i[1:0];
+			#200;
+		end
+
+		test_in = 4'h2;
+		for (i = 3; i >= 0; i = i - 1)
+		begin
+			test_addr = i[1:0];
+			#200;
+		end
+		$stop;
+	end
+
+endmodule

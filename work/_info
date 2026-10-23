@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08
+vcoder
+!s110 1790364909
+!i10b 1
+!s100 Af8S8hSz>gD1ZDP12g_dj3
+Id<<9:^aP^7XdMRmB;`;GE2
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 d/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS
+w1790363768
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder.v
+L0 2
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1790364909.280124
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder.v|
+!i113 1
+Z3 o-work work
+vcoder_tb
+!s110 1790365018
+!i10b 1
+!s100 2<876gGEjaO07WTCoVjOQ0
+ILJ=mb8nCMh^Si751gRSaB3
+R0
+R1
+w1790364967
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder_tb.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1790365018.026718
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/coder_tb.v|
+!i113 1
+R3
+vdms
+!s110 1790366215
+!i10b 1
+!s100 h==E_K>XZEhH1[7^9bIA?2
+IDMY14He:B9gYHlS?]PY;o1
+R0
+R1
+w1790365935
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1790366215.623943
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms.v|
+!i113 1
+R3
+vdms_tb
+!s110 1790367175
+!i10b 1
+!s100 IhmOa0FdDI6^[M5;2OnNf0
+IA79`<Ag;I892G7gnET<620
+R0
+R1
+w1790367168
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms_tb.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1790367175.731850
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/dms_tb.v|
+!i113 1
+R3

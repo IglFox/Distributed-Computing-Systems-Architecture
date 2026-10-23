@@ -1,0 +1,43 @@
+/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/dms7_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/dms7_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module dms7_tb
+
+Top level modules:
+	dms7_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/coder.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/coder.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module coder
+
+Top level modules:
+	coder
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/main.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/main.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/main_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/main_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module main_tb
+
+Top level modules:
+	main_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/coder_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/coder_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module coder_tb
+
+Top level modules:
+	coder_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/dms_7.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba1/dms_7.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module dms_7
+
+Top level modules:
+	dms_7
+
+} {} {}}

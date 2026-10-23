@@ -1,0 +1,14 @@
+module dms_7
+(
+	input wire [6:0] line,
+ 	input wire [1:0] adr,
+ 	output wire [6:0] data0, 
+ 	output wire [6:0] data1, 
+ 	output wire [6:0] data2, 
+ 	output wire [6:0] data3 
+);
+ 	assign data0 = (adr== 2'h0)? line : 7'b0000000;
+ 	assign data1 = (adr== 2'h1)? line : 7'b0000000;
+ 	assign data2 = (adr== 2'h2)? line : 7'b0000000;
+ 	assign data3 = (adr== 2'h3)? line : 7'b0000000;
+endmodule

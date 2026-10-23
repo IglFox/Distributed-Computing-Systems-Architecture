@@ -1,0 +1,17 @@
+`timescale 1ns/100ps
+
+module coder_tb;
+	reg [3:0] test_in;
+	wire [6:0] test_out;
+	interger i;
+	coder test (.data(test_in), .seg(test_out));
+	initial
+	begin
+		for (i = 0 i < 16; i = i + 1)
+		begin
+			test_in=i[3:0];
+			#200;
+		end
+		$stop;
+	end
+endmodule

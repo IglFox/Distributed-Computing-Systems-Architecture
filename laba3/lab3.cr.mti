@@ -1,0 +1,22 @@
+/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module coder_tb
+
+Top level modules:
+	coder_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module count_par
+
+Top level modules:
+	count_par
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module coder
+
+Top level modules:
+	coder
+
+} {} {}}

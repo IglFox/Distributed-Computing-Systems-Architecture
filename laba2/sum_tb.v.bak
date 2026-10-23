@@ -1,0 +1,26 @@
+`timescale 1ns/100ps
+
+module sum_tb;
+	reg at, bt, crt;
+	wire st, crpt;
+	
+	integer i;
+
+	sum test_sum(.a(at), .b(bt), .cr(crt), .s(st), .crp(crpt));
+	
+	initial
+	begin
+		at = 0;
+		bt = 0;
+		crt = 0;
+		#10;
+
+		for (i = 0; i< 2; i = i + 1)
+		begin
+			{at, bt, crt} = i[2:0];
+			#200;
+		end
+		$stop;
+	end
+
+endmodule
