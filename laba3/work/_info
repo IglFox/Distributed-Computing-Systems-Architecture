@@ -9,62 +9,162 @@ z2
 cModel Technology
 d/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba2
 vcoder
-!s110 1792750692
+Z0 !s110 1792842426
 !i10b 1
 !s100 Af8S8hSz>gD1ZDP12g_dj3
 IFoHH]6iah;VhiH2XMhKH63
-Z0 V`JN@9S9cnhjKRR_L]QIcM3
-Z1 d/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 d/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3
 w1790363768
 8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v
 F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v
 L0 2
-Z2 OV;L;10.3d;59
+Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1792750691.811910
+!s108 1792842426.003491
 !s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v|
 !i113 1
-Z3 o-work work
+Z4 o-work work
 vcoder_tb
-!s110 1792750693
+R0
 !i10b 1
 !s100 bCaalfH^1;742GKSgX1j^1
 InRBHIl3CX9jc^@2CCV?`X0
-R0
 R1
+R2
 w1791629298
 8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v
 F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1792750692.923684
+!s108 1792842426.638573
 !s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v|
 !i113 1
-R3
-vcount_par
-!s110 1792759927
+R4
+vcount_div2
+Z5 !s110 1792842428
 !i10b 1
-!s100 [FBZflT5`n18Vf3I?L0nY1
-IH?B0H;YR@S:NI>[Fj8:M]0
-R0
+!s100 dHNmeQ<=CB@]Dn;=c:9lg3
+I@T:X4WFg34Cl`]Gj:VLc33
 R1
-w1792759924
-8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v
-F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v
-L0 1
 R2
+w1792840578
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v
+L0 1
+R3
 r1
 !s85 0
 31
-!s108 1792759926.999018
+!s108 1792842427.905823
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v|
+!i113 1
+R4
+vcount_div2_tb
+R5
+!i10b 1
+!s100 Jj[6_bn6[mm6CY@S7=Z?U1
+IUzjO@HUOLagjMUdI`FNQ61
+R1
+R2
+w1792842398
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2_tb.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1792842428.395529
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2_tb.v|
+!i113 1
+R4
+vcount_par
+Z6 !s110 1792842427
+!i10b 1
+!s100 [FBZflT5`n18Vf3I?L0nY1
+IH?B0H;YR@S:NI>[Fj8:M]0
+R1
+R2
+w1792764803
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1792842427.032852
 !s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par.v|
 !i113 1
+R4
+vcount_par_tb
+R6
+!i10b 1
+!s100 hDHNg2<GXK[cZQY6VGKP63
+I;AcQ3RRoj_>j^2kjRN6g51
+R1
+R2
+w1792840321
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v
+L0 3
 R3
+r1
+!s85 0
+31
+!s108 1792842427.469184
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v|
+!i113 1
+R4
+vmain
+R5
+!i10b 1
+!s100 h4o6d6^RJCe];>F;Rl<E13
+I19d0AWc?Wm?6]?mAke6OW1
+R1
+R2
+w1792841197
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1792842428.777039
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v|
+!i113 1
+R4
+vmain_tb
+!s110 1792842429
+!i10b 1
+!s100 99=2WJN<FdSDZMGZo;R]Y2
+Iz79Q@ghok59]MKzB6S]^<1
+R1
+R2
+w1792840322
+8/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v
+F/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1792842429.376421
+!s107 /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v|
+!i113 1
+R4

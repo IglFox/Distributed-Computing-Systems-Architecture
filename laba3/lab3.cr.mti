@@ -1,4 +1,11 @@
-/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v
+/afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module main_tb
+
+Top level modules:
+	main_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder_tb.v
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module coder_tb
 
@@ -11,6 +18,27 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 
 Top level modules:
 	count_par
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_par_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module count_par_tb
+
+Top level modules:
+	count_par_tb
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/main.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/count_div2.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module count_div2
+
+Top level modules:
+	count_div2
 
 } {} {}} /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v {1 {vlog -work work -stats=none /afs/dcti.sut.ru/homes/students/ikpi43/ikpi43n08/ADCS/laba3/coder.v
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014

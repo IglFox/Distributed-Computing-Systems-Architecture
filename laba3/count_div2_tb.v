@@ -3,7 +3,7 @@
 module count_div2_tb;
     localparam N=4, T=20, M=10;
     reg clk;
-    reg sync;
+    wire sync;
     wire [N-1:0] q;
 
     always

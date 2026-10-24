@@ -1,14 +1,13 @@
 module main
-#(parameter N=4, M=10)
+#(parameter N=24, M=12500000)
 (
     input wire clk_h, sld, en, sclr, rvs, aclr,
     input wire [N-1:0] d,
-    output wire [6:0] seg,
-    output wire [N-1:0] q_div
+    output wire [6:0] seg
 );
 
-    reg clk_lw;
-    reg [N-1:0] q;
+    wire clk_lw;
+    wire [N-1:0] q;
 
     count_div2 #(
     	.N(N),
@@ -16,7 +15,7 @@ module main
      ) count_div2 (
     	.clk (clk_h),
     	.sync(clk_lw),
-    	.q   (q_div)
+    	.q   ()
     );
 
     count_par #(

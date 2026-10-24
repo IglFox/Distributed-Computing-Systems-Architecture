@@ -15,7 +15,7 @@ module count_div2
     always@(posedge clk)
     begin
         cnt <= cnt_next;
-        sync <= sync;
+        sync <= sync; // !
         if (cnt == M - 1)
         begin
             cnt <= 0;
