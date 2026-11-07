@@ -1,21 +1,21 @@
 module shift_reg
 #(
-    parameter WIDTH = 4,
-    parameter DEPTH = 6
+    parameter DATA_SIZE = 4,
+    parameter SEG_COUNT = 6
 )
 (
     input  wire             clk,
     input  wire             reset,
-    input  wire [WIDTH-1:0] data_in,
-    output wire [WIDTH-1:0] q0,
-    output wire [WIDTH-1:0] q1,
-    output wire [WIDTH-1:0] q2,
-    output wire [WIDTH-1:0] q3,
-    output wire [WIDTH-1:0] q4,
-    output wire [WIDTH-1:0] q5
+    input  wire [DATA_SIZE-1:0] data_in,
+    output wire [DATA_SIZE-1:0] q0,
+    output wire [DATA_SIZE-1:0] q1,
+    output wire [DATA_SIZE-1:0] q2,
+    output wire [DATA_SIZE-1:0] q3,
+    output wire [DATA_SIZE-1:0] q4,
+    output wire [DATA_SIZE-1:0] q5
 );
 
-    reg [WIDTH-1:0] shift_reg [DEPTH-1:0];
+    reg [DATA_SIZE-1:0] shift_reg [SEG_COUNT-1:0];
 
     integer i;
 
@@ -30,15 +30,15 @@ module shift_reg
     begin
         if (reset)
         begin
-            for (i = 0; i < DEPTH; i = i + 1)
+            for (i = 0; i < SEG_COUNT; i = i + 1)
             begin
-                shift_reg[i] <= {WIDTH{1'b0}};
+                shift_reg[i] <= {DATA_SIZE{1'b0}};
             end
         end
 
         else
         begin
-            for (i = 1; i < DEPTH; i = i + 1)
+            for (i = 1; i < SEG_COUNT; i = i + 1)
             begin
                 shift_reg[i] <= shift_reg[i-1];
             end

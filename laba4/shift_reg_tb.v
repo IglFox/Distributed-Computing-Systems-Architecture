@@ -2,19 +2,19 @@
 
 module shift_reg_tb;
 
-    localparam WIDTH = 4;
-    localparam DEPTH = 6;
+    localparam DATA_SIZE = 4;
+    localparam SEG_COUNT = 6;
     localparam T = 1000;
 
     reg             clk;
     reg             reset;
-    reg [WIDTH-1:0] data_in;
+    reg [DATA_SIZE-1:0] data_in;
 
-    wire [WIDTH-1:0] q0, q1, q2, q3, q4, q5;
+    wire [DATA_SIZE-1:0] q0, q1, q2, q3, q4, q5;
 
     shift_reg #(
-        .WIDTH(WIDTH),
-        .DEPTH(DEPTH)
+        .DATA_SIZE(DATA_SIZE),
+        .SEG_COUNT(SEG_COUNT)
     ) test (
         .clk(clk),
         .reset(reset),
@@ -23,7 +23,12 @@ module shift_reg_tb;
     );
 
     initial clk = 1'b0;
-    always #(T / 2) clk = ~clk;
+    always
+    begin
+        #(T / 2);
+        clk = ~clk;
+    end
+
 
     integer i;
 

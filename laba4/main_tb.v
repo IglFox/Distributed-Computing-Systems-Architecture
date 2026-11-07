@@ -4,7 +4,7 @@ module main_tb;
 
     localparam N = 4;
     localparam M = 4'd4;
-    localparam T = 20;
+    localparam T = 1000;
 
     reg        clk;
     reg        reset;
@@ -21,7 +21,7 @@ module main_tb;
     main #(
         .N(N),
         .M(M)
-    ) uut (
+    ) test (
         .clk    (clk),
         .reset  (reset),
         .data_in(data_in),
@@ -35,46 +35,35 @@ module main_tb;
     );
 
     initial clk = 1'b0;
-    always #(T / 2) clk = ~clk;
+    always
+    begin
+        #(T / 2)
+        clk = ~clk;
+    end
+
+    integer i;
 
     initial
     begin
-        reset   = 1'b0;
+        reset   = 1'b1;
         data_in = 4'd0;
 
-        #(T);
-        reset = 1'b1;
         #(T * 2);
         reset = 1'b0;
         #(T);
 
-        @(posedge uut.clk_lw);
+        @(posedge clk_1hz);
 
-        @(negedge uut.clk_lw);
-        data_in = 4'd1;
+        for (i = 1; i <= 7; i = i + 1)
+        begin
+            @(negedge clk_1hz);
+            data_in = i[3:0];
+        end
 
-        @(negedge uut.clk_lw);
-        data_in = 4'd2;
-
-        @(negedge uut.clk_lw);
-        data_in = 4'd3;
-
-        @(negedge uut.clk_lw);
-        data_in = 4'd4;
-
-        @(negedge uut.clk_lw);
-        data_in = 4'd5;
-
-        @(negedge uut.clk_lw);
-        data_in = 4'd6;
-
-        @(negedge uut.clk_lw);
-        data_in = 4'd7;
-
-        @(negedge uut.clk_lw);
+        @(negedge clk_1hz);
         data_in = 4'd0;
 
-        repeat (8) @(negedge uut.clk_lw);
+        repeat (10) @(negedge clk_1hz);
 
         $stop;
     end
