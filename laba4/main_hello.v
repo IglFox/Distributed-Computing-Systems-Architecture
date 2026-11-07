@@ -1,5 +1,3 @@
-`timescale 1ns / 100ps
-
 module main_hello
 #(
     parameter N = 26,

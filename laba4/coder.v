@@ -1,5 +1,3 @@
-`timescale 1ns / 100ps
-
 module coder
 (
     input  wire [3:0] data,

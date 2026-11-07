@@ -4,7 +4,7 @@ module main_hello_tb;
 
     localparam N = 4;
     localparam M = 4'd4;
-    localparam T = 20;
+    localparam T = 1000;
 
     reg        clk;
     reg        reset;
@@ -21,7 +21,7 @@ module main_hello_tb;
     main_hello #(
         .N(N),
         .M(M)
-    ) uut (
+    ) test (
         .clk    (clk),
         .reset  (reset),
         .data_in(data_in),
@@ -35,7 +35,12 @@ module main_hello_tb;
     );
 
     initial clk = 1'b0;
-    always #(T / 2) clk = ~clk;
+    always
+    begin
+        #(T / 2)
+        clk = ~clk;
+    end
+
 
     integer i;
 
@@ -50,20 +55,19 @@ module main_hello_tb;
         reset = 1'b0;
         #(T);
 
-        @(posedge uut.clk_lw);
+        @(posedge clk_1hz);
 
         for (i = 0; i <= 11; i = i + 1)
         begin
-            @(negedge uut.clk_lw);
+            @(negedge clk_1hz);
             data_in = i[3:0];
         end
 
-        @(negedge uut.clk_lw);
+        @(negedge clk_1hz);
         data_in = 4'd5;
 
-        repeat (8) @(negedge uut.clk_lw);
+        repeat (8) @(negedge clk_1hz);
 
-        $display("Simulation of main_hello finished successfully.");
         $stop;
     end
 

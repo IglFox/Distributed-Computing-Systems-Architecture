@@ -1,5 +1,3 @@
-`timescale 1ns / 100ps
-
 module coder_hello
 (
     input  wire [3:0] data,

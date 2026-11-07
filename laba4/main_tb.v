@@ -76,7 +76,6 @@ module main_tb;
 
         repeat (8) @(negedge uut.clk_lw);
 
-        $display("Simulation of main finished successfully.");
         $stop;
     end
 

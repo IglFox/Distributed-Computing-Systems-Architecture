@@ -1,5 +1,3 @@
-`timescale 1ns / 100ps
-
 module shift_reg
 #(
     parameter WIDTH = 4,
@@ -37,6 +35,7 @@ module shift_reg
                 shift_reg[i] <= {WIDTH{1'b0}};
             end
         end
+
         else
         begin
             for (i = 1; i < DEPTH; i = i + 1)

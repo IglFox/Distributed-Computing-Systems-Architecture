@@ -1,15 +1,13 @@
 `timescale 1ns / 100ps
 
 module coder_hello_tb;
-
     reg  [3:0] test_in;
     wire [6:0] test_out;
 
-    coder_hello uut (
+    coder_hello test (
         .data(test_in),
         .seg(test_out)
     );
-
     integer i;
 
     initial
@@ -23,7 +21,6 @@ module coder_hello_tb;
             #200;
         end
 
-        $display("Simulation of coder_hello finished successfully.");
         $stop;
     end
 

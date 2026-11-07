@@ -1,5 +1,3 @@
-`timescale 1ns / 100ps
-
 module main
 #(
     parameter N = 26,
@@ -31,7 +29,7 @@ module main
     count_div2 #(
         .N(N),
         .M(M)
-    ) div_inst (
+    ) div (
         .clk  (clk),
         .sync (clk_lw),
         .q    ()
@@ -40,7 +38,7 @@ module main
     shift_reg #(
         .WIDTH(4),
         .DEPTH(6)
-    ) sreg_inst (
+    ) sreg (
         .clk    (clk_lw),
         .reset  (reset),
         .data_in(data_in),
